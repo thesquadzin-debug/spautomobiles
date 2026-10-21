@@ -3,187 +3,52 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>SP Automobiles | Hero MotoCorp Showroom, Madhukarpur, Siddharthnagar</title>
-<meta name="description" content="SP Automobiles, Madhukarpur, Siddharthnagar (UP) — Hero motorcycles, scooters and Vida electric. Book a test ride, service, spares, exchange and finance.">
-<meta name="theme-color" content="#0a0a0a">
+<title>SP Automobiles</title>
+<meta name="description" content="SP Automobiles, Hero motorcycles, scooters and Vida electric. Book a test ride, service, spares, exchange and finance.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
-<style>
-:root{--red:#e4002b;--red2:#b80022;--bg:#0a0a0a;--bg2:#131315;--card:#18181b;--ink:#f4f4f5;--mut:#a1a1aa;--line:#2a2a2f;--hd:#0a0a0a;
---fd:"Barlow Condensed","Arial Narrow",Impact,sans-serif;--fb:Barlow,system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
-@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#fff;--bg2:#f3f3f4;--card:#fff;--ink:#111;--mut:#5c5c64;--line:#e2e2e5}}
-:root[data-theme="light"]{--bg:#fff;--bg2:#f3f3f4;--card:#fff;--ink:#111;--mut:#5c5c64;--line:#e2e2e5}
-*{box-sizing:border-box;margin:0}
-:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-html{scroll-behavior:smooth;scroll-padding-top:90px}
-body{background:var(--bg);color:var(--ink);font:400 1rem/1.6 var(--fb);overflow-x:hidden}
-body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--hd);z-index:60}
-a{color:inherit;text-decoration:none}
-.w{max-width:1240px;margin:0 auto;padding:0 22px}
-h1,h2,h3{font-family:var(--fd);text-transform:uppercase;line-height:1;letter-spacing:.01em}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 30px;border:2px solid var(--red);border-radius:999px;background:var(--red);color:#fff;font:700 .98rem var(--fd);letter-spacing:.09em;text-transform:uppercase;cursor:pointer;transition:.2s}
-.btn:hover{background:var(--red2);border-color:var(--red2)}
-.btn.o{background:transparent;border-color:#fff}.btn.o:hover{background:#fff;color:#111}
-/* utility + header */
-.ut{background:#000;color:#bbb;font-size:.82rem}
-.ut .w{display:flex;justify-content:flex-end;gap:24px;padding-top:6px;padding-bottom:6px}
-.ut a:hover{color:#fff}
-header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:var(--hd);color:#f4f4f5;border-bottom:1px solid #222}
-header .w{display:flex;align-items:center;justify-content:space-between;height:70px}
-.logo{display:flex;align-items:center;gap:10px;font:800 1.65rem var(--fd);text-transform:uppercase;letter-spacing:.02em}
-.logo i{display:grid;place-items:center;width:38px;height:38px;background:var(--red);font-style:normal;font-size:1.15rem;border-radius:6px}
-nav{display:flex;gap:30px;align-items:center}
-nav a{font:600 .98rem var(--fd);letter-spacing:.1em;text-transform:uppercase;color:#d4d4d8;position:relative;padding:6px 0}
-nav a:hover{color:#fff}
-nav a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:2px;background:var(--red);transition:.25s}
-nav a:hover::after{width:100%}
-.mt{display:none;width:44px;height:40px;background:none;border:1px solid #333;border-radius:8px;color:#fff;font-size:1.3rem;cursor:pointer}
-/* hero slider */
-.hero{position:relative;background:#0a0a0a;color:#fff;overflow:hidden;min-height:620px;display:flex;align-items:center}
-.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(60% 70% at 70% 55%,var(--a,#7a0016) 0,transparent 70%);transition:background .6s}
-.hero .w{position:relative;width:100%}
-.sl{display:none;grid-template-columns:1fr 1.15fr;gap:20px;align-items:center;padding:56px 0 90px;animation:fi .6s ease}
-.sl.on{display:grid}
-@keyframes fi{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
-.sl .wm{position:absolute;left:-10px;top:50%;transform:translateY(-50%);font:800 clamp(6rem,19vw,17rem)/1 var(--fd);text-transform:uppercase;color:#fff;opacity:.05;white-space:nowrap;pointer-events:none}
-.tg{display:inline-block;background:var(--red);font:700 .82rem var(--fd);letter-spacing:.15em;text-transform:uppercase;padding:3px 12px;border-radius:3px;margin-bottom:14px}
-.sl h1{font-size:clamp(2.8rem,7vw,5.6rem);font-weight:800;margin-bottom:22px}
-.sp{display:flex;gap:34px;margin-bottom:12px}
-.sp b{display:block;font:700 2.4rem/1 var(--fd)}.sp b small{font-size:1.1rem;color:var(--mut);margin-left:3px}
-.sp span{font-size:.82rem;color:var(--mut);letter-spacing:.04em}
-.ds{color:#cfcfd4;max-width:430px;margin-bottom:8px}
-.pr{font-size:.85rem;color:var(--mut);margin-bottom:24px}
-.cta{display:flex;gap:12px;flex-wrap:wrap}
-.sl svg{width:100%;height:auto;color:#fff;filter:drop-shadow(0 22px 28px rgba(0,0,0,.6)) drop-shadow(0 0 40px rgba(228,0,43,.35));position:relative}
-.ct2{position:absolute;left:22px;right:22px;bottom:26px;display:flex;align-items:center;gap:14px}
-.dots{display:flex;gap:8px}.dots button{width:34px;height:4px;border:0;border-radius:2px;background:#444;cursor:pointer;padding:0}
-.dots button.on{background:var(--red)}
-.ar{width:42px;height:42px;border-radius:50%;border:1px solid #444;background:transparent;color:#fff;font-size:1.1rem;cursor:pointer}
-.ar:hover{border-color:var(--red);color:var(--red)}
-.ct2 .sp2{flex:1}
-/* sections */
-section{padding:76px 0}
-.alt{background:var(--bg2)}
-.sh{margin-bottom:30px;display:flex;justify-content:space-between;align-items:flex-end;gap:18px;flex-wrap:wrap}
-.sh span{font:700 .95rem var(--fd);letter-spacing:.2em;text-transform:uppercase;color:var(--red)}
-.sh h2{font-size:clamp(2.1rem,5vw,3.4rem);margin-top:4px}
-.tb2{display:flex;gap:6px;flex-wrap:wrap}
-.tb2 button{padding:9px 20px;border:1px solid var(--line);border-radius:999px;background:transparent;color:var(--ink);font:700 .92rem var(--fd);letter-spacing:.08em;text-transform:uppercase;cursor:pointer}
-.tb2 button.on{background:var(--red);border-color:var(--red);color:#fff}
-.gr{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px}
-.mc{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;transition:.25s;position:relative}
-.mc:hover{border-color:var(--red);transform:translateY(-4px)}
-.mc .im{padding:22px 20px 6px;background:radial-gradient(70% 80% at 50% 70%,rgba(228,0,43,.16),transparent 70%);color:var(--ink)}
-.mc .im svg{width:100%;height:auto;display:block}
-.mc .nw{position:absolute;top:12px;left:12px;background:var(--red);color:#fff;font:700 .72rem var(--fd);letter-spacing:.12em;padding:2px 9px;border-radius:3px}
-.mc .bd{padding:10px 20px 20px}
-.mc h3{font-size:1.55rem}
-.mc p{color:var(--mut);font-size:.9rem;margin:3px 0 14px}
-.mc .rw{display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--line);padding-top:12px;font:700 .9rem var(--fd);letter-spacing:.08em;text-transform:uppercase}
-.mc .rw a{color:var(--red)}.mc .rw a:hover{text-decoration:underline}
-.ex{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
-.ex a{display:block;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px 24px;transition:.25s}
-.ex a:hover{border-color:var(--red);transform:translateY(-3px)}
-.ex b{display:block;font:700 1.5rem var(--fd);text-transform:uppercase;margin-bottom:6px}
-.ex b::after{content:" →";color:var(--red)}
-.ex span{color:var(--mut);font-size:.93rem}
-.band{background:linear-gradient(100deg,var(--red),#8d0019);color:#fff;padding:48px 0}
-.band .w{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
-.band h2{font-size:clamp(1.9rem,4vw,2.9rem)}
-.band .btn{background:#fff;color:var(--red);border-color:#fff}.band .btn:hover{background:#000;color:#fff;border-color:#000}
-.cn{display:grid;grid-template-columns:1fr 1.1fr;gap:36px}
-.ci p{margin-bottom:16px;color:var(--mut)}.ci b{display:block;color:var(--ink);font:700 1.05rem var(--fd);letter-spacing:.1em;text-transform:uppercase}
-form{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px;display:grid;gap:14px}
-label{font:700 .88rem var(--fd);letter-spacing:.1em;text-transform:uppercase}
-input,select{width:100%;margin-top:5px;padding:12px 14px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);font:inherit}
-input:focus,select:focus{outline:2px solid var(--red);border-color:var(--red)}
-.r2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-footer{background:#000;color:#a1a1aa;padding:36px 0 26px;font-size:.9rem}
-footer .w{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
-footer b{color:#fff;font:800 1.5rem var(--fd);text-transform:uppercase}
-footer small{display:block;width:100%;border-top:1px solid #222;padding-top:14px;color:#777}
-@media(max-width:860px){
- .ut{display:none}.mt{display:block}
- nav{position:absolute;left:0;right:0;top:70px;background:var(--hd);flex-direction:column;gap:0;border-bottom:1px solid #222;display:none}
- nav.on{display:flex}nav a{width:100%;padding:16px 24px;border-top:1px solid #1d1d20}nav a::after{display:none}
- .sl{grid-template-columns:1fr;padding:34px 0 96px;gap:0}.sl svg{order:-1;max-width:420px;margin:0 auto}
- .hero{min-height:0}.sp{gap:26px}
- .cn{grid-template-columns:1fr}.r2{grid-template-columns:1fr}
- section{padding:56px 0}
-}
-
-.tr{background:var(--bg2);border-bottom:1px solid var(--line)}
-.tr .w{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;padding-top:26px;padding-bottom:26px}
-.tr div{text-align:center;padding:4px 8px}.tr b{display:block;font:800 2rem/1 var(--fd);color:var(--red)}
-.tr span{font-size:.85rem;color:var(--mut);letter-spacing:.04em}
-.lc{display:grid;grid-template-columns:1.1fr .9fr;gap:22px}
-.mp{position:relative;min-height:340px;border-radius:14px;overflow:hidden;border:1px solid var(--line);display:grid;place-items:center;text-align:center;padding:30px;background:
- linear-gradient(var(--line) 1px,transparent 1px) 0 0/44px 44px,linear-gradient(90deg,var(--line) 1px,transparent 1px) 0 0/44px 44px,radial-gradient(60% 60% at 50% 50%,rgba(228,0,43,.22),transparent 70%),var(--card)}
-.pin{width:54px;height:54px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);background:var(--red);margin:0 auto 22px;display:grid;place-items:center;box-shadow:0 0 0 10px rgba(228,0,43,.18)}
-.pin::after{content:"";width:18px;height:18px;border-radius:50%;background:#fff}
-.mp h3{font-size:2rem;margin-bottom:8px}.mp p{color:var(--mut);max-width:360px;margin:0 auto 20px}
-.lk{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px;display:grid;gap:16px;align-content:start}
-.lk p{color:var(--mut)}.lk b{display:block;color:var(--ink);font:700 1.05rem var(--fd);letter-spacing:.1em;text-transform:uppercase}
-.lk a:not(.btn){color:var(--red);font-weight:600}
-.rv{display:flex;align-items:center;gap:28px;flex-wrap:wrap;justify-content:space-between;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:30px}
-.rv .sc{font:800 4.4rem/1 var(--fd)}.rv .st{color:#f5b301;font-size:1.5rem;letter-spacing:.1em}.rv small{color:var(--mut);display:block}
-@media(max-width:860px){.tr .w{grid-template-columns:1fr 1fr}.lc{grid-template-columns:1fr}.mp{min-height:280px}}
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
-<linearGradient id="gr1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff3b4f"/><stop offset=".55" stop-color="#e4002b"/><stop offset="1" stop-color="#7d0017"/></linearGradient>
-<linearGradient id="gm" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9a9aa3"/><stop offset=".5" stop-color="#4a4a52"/><stop offset="1" stop-color="#1c1c20"/></linearGradient>
-<linearGradient id="gs" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f4f4f5"/><stop offset="1" stop-color="#7c7c85"/></linearGradient>
-<radialGradient id="gw" cx=".5" cy=".5" r=".5"><stop offset=".62" stop-color="#2a2a30"/><stop offset="1" stop-color="#050505"/></radialGradient>
-<g id="wh"><circle r="30" fill="none" stroke="#0b0b0d" stroke-width="10"/><circle r="25" fill="none" stroke="url(#gs)" stroke-width="2.5"/><g stroke="#8d8d96" stroke-width="1.2"><path d="M0-24V24M-24 0H24M-17-17L17 17M-17 17L17-17"/></g><circle r="11" fill="#1a1a1e" stroke="#c9c9d0" stroke-width="1.5"/><circle r="4" fill="#e4002b"/></g>
-<symbol id="b" viewBox="0 0 300 150"><ellipse cx="152" cy="140" rx="128" ry="6" fill="#000" opacity=".35"/>
-<use href="#wh" x="68" y="108"/><use href="#wh" x="236" y="108"/>
-<path d="M70 106L132 98" stroke="url(#gm)" stroke-width="7" stroke-linecap="round"/>
-<path d="M206 52L238 106" stroke="url(#gs)" stroke-width="6" stroke-linecap="round"/><path d="M212 58L228 98" stroke="#2a2a30" stroke-width="2"/>
-<path d="M116 84h70l8 14-6 16h-62q-18-4-20-18z" fill="url(#gm)"/><path d="M126 92h50v10h-50z" fill="#15151a"/><path d="M128 96h44" stroke="#e4002b" stroke-width="2"/>
-<path d="M124 112q-40 4-70 -6l-2 6q36 12 78 4z" fill="url(#gs)"/><circle cx="54" cy="108" r="5" fill="#b0b0b8"/>
-<path d="M52 70q12-18 46-14l6 4-14 16z" fill="url(#gr1)"/>
-<path d="M92 60q10-14 34-12l-4 18H88z" fill="#101013"/>
-<path d="M118 56q26-20 62-8l10 12q-36 12-70 6z" fill="url(#gr1)"/><path d="M122 58q28-12 58-4" stroke="#fff" stroke-opacity=".5" stroke-width="2" fill="none"/>
-<path d="M184 56l22-8 10 4-6 14-28 2z" fill="#101013"/>
-<path d="M196 50q14-14 24-6l6 14-10 4z" fill="url(#gr1)"/><path d="M216 50l12 2-2 10-10 -2z" fill="#fff"/><path d="M216 50l12 2-2 10-10-2z" fill="#fffbe0"/>
-<path d="M200 44l-6-8M200 44l16-6" stroke="#cfcfd5" stroke-width="3" stroke-linecap="round"/><circle cx="162" cy="76" r="3" fill="#e4002b"/></symbol>
-<symbol id="s" viewBox="0 0 300 150"><ellipse cx="152" cy="140" rx="124" ry="6" fill="#000" opacity=".35"/>
-<use href="#wh" x="66" y="112" transform="translate(0 0)"/><use href="#wh" x="238" y="112"/>
-<path d="M226 40L240 108" stroke="url(#gs)" stroke-width="6" stroke-linecap="round"/>
-<path d="M44 100q-4-34 30-44l56-4 20 24 40 14 8 26q-30 6-56 4H72q-24 2-28-20z" fill="url(#gr1)"/>
-<path d="M88 52q24-14 56-6l-4 12H84z" fill="#101013"/>
-<path d="M120 90h96l-2 18h-86z" fill="url(#gm)"/><path d="M130 94h70" stroke="#e4002b" stroke-width="2"/>
-<path d="M196 54q18-26 36-14l4 18-24 10z" fill="url(#gr1)"/><path d="M226 38l14 2-2 12-12-2z" fill="#fffbe0"/>
-<path d="M232 34l-8-8h16" stroke="#cfcfd5" stroke-width="3" stroke-linecap="round" fill="none"/>
-<path d="M60 104q-18-2-26 4" stroke="url(#gs)" stroke-width="6" stroke-linecap="round" fill="none"/></symbol></defs></svg>
+<symbol id="b" viewBox="0 0 300 150"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><g stroke-width="6"><circle cx="72" cy="108" r="30"/><circle cx="232" cy="108" r="30"/></g><g stroke-width="2" opacity=".5"><circle cx="72" cy="108" r="19"/><circle cx="232" cy="108" r="19"/><path d="M72 89v38M53 108h38M232 89v38M213 108h38"/></g><g stroke-width="6"><path d="M72 108L100 46M150 102l82 6M132 99q40 16 84 4"/><path d="M48 80q24-18 50-2" stroke-width="5"/></g><path d="M100 46l16-8" stroke-width="5"/><path d="M206 60l16 36" stroke-width="4"/><g fill="currentColor" stroke="none"><circle cx="92" cy="56" r="9"/><path d="M112 52q30-16 66-2l-6 20q-30-6-56 0z"/><path d="M178 52q28-8 54 0l-4 10q-26-2-52 2z"/><path d="M232 52l24-8-4 12z"/><path d="M126 74l52-2 4 28-50 2z" opacity=".85"/><circle cx="72" cy="108" r="5"/><circle cx="232" cy="108" r="5"/></g></g></symbol>
+<symbol id="s" viewBox="0 0 300 150"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><g stroke-width="6"><circle cx="70" cy="112" r="26"/><circle cx="238" cy="112" r="26"/></g><g stroke-width="2" opacity=".5"><circle cx="70" cy="112" r="16"/><circle cx="238" cy="112" r="16"/><path d="M70 96v32M54 112h32M238 96v32M222 112h32"/></g><g stroke-width="6"><path d="M70 112L98 40M150 108l88 4"/></g><path d="M98 40l16-5" stroke-width="5"/><g fill="currentColor" stroke="none"><circle cx="94" cy="50" r="8"/><path d="M92 54l20 4 8 44-18 4z"/><path d="M106 98h68l6 12H110z"/><path d="M150 64q40-14 84-4l4 20-82 6z"/><path d="M176 86l64-8-2 28q-32 6-60-2z" opacity=".9"/><circle cx="70" cy="112" r="5"/><circle cx="238" cy="112" r="5"/></g></g></symbol></defs></svg>
 
-<div class="ut"><div class="w"><a href="#locate">📍 Madhukarpur, Siddharthnagar</a><a href="tel:+919289922584">📞 +91 92899 22584</a><a href="#reviews">★ 4.7 · 1,744 Google reviews</a></div></div>
+<!-- ===== TOP BAR: phone and quick links (phone comes from config.js) ===== -->
+<div class="ut"><div class="w"><a href="#contact">Visit our showroom</a><span data-cfg="phoneDisplay">+91 00000 00000</span><a href="#explore">Exchange offers</a></div></div>
+<!-- ===== HEADER AND MENU: edit menu names here ===== -->
 <header><div class="w">
- <a class="logo" href="#top"><i>SP</i>SP Automobiles</a>
- <nav id="nv"><a href="#models" data-t="Premium">Motorcycles</a><a href="#models" data-t="Scooters">Scooters</a><a href="#models" data-t="Premium">Premium</a><a href="#models" data-t="Electric">Electric</a><a href="#explore">Explore</a><a href="#locate">Find Us</a><a href="#contact">Contact</a></nav>
- <button class="mt" id="mt" aria-label="Menu" aria-expanded="false">☰</button>
+ <a class="logo" href="#top"><i>SP</i><span data-cfg="name">SP Automobiles</span></a>
+ <nav id="nv"><a href="#models" data-t="Premium">Motorcycles</a><a href="#models" data-t="Scooters">Scooters</a><a href="#models" data-t="Premium">Premium</a><a href="#models" data-t="Electric">Electric</a><a href="#explore">Explore</a><a href="#contact">Contact</a></nav>
+ <button class="mt" id="mt" aria-label="Menu" aria-expanded="false">&#9776;</button>
 </div></header>
 
 <main id="top">
+<!-- ===== HERO SLIDER: slides are built from config.js (heroSlides) ===== -->
 <div class="hero" id="hero"><div class="w">
  <div id="sls"></div>
- <div class="ct2"><div class="dots" id="dots"></div><div class="sp2"></div><button class="ar" id="pv" aria-label="Previous">←</button><button class="ar" id="nx" aria-label="Next">→</button></div>
+ <div class="ct2"><span class="cnt" id="cnt"></span><div class="dots" id="dots"></div><button class="ar" id="pv" aria-label="Previous">&larr;</button><button class="ar" id="nx" aria-label="Next">&rarr;</button></div>
 </div></div>
 
-<div class="tr"><div class="w"><div><b>4.7★</b><span>1,744 Google reviews</span></div><div><b>Sales</b><span>Motorcycles · Scooters · Vida EV</span></div><div><b>Service</b><span>Authorised workshop &amp; genuine parts</span></div><div><b>Finance</b><span>Easy loans &amp; exchange offers</span></div></div></div>
-
+<!-- ===== MODEL RANGE: cards are built from config.js (models) ===== -->
 <section id="models"><div class="w">
- <div class="sh"><div><span>Find your ride</span><h2>Our range</h2></div><div class="tb2" id="tb"></div></div>
+ <div class="sh"><div><span class="eyebrow">Find your ride</span><h2>Our range</h2></div><div class="tb2" id="tb"></div></div>
+ <p class="rc" id="rc"></p>
  <div class="gr" id="gr"></div>
 </div></section>
 
-<div class="band"><div class="w"><h2>Exchange your old bike · Easy finance · Quick delivery</h2><a class="btn" href="#contact">Get a quote</a></div></div>
+<!-- ===== OFFER STRIP: exchange, finance, delivery ===== -->
+<div class="band"><div class="w">
+ <div><h3>Exchange your old bike</h3><p>Fair value on your old two-wheeler.</p></div>
+ <div><h3>Easy finance</h3><p>Low down-payment schemes through leading lenders.</p></div>
+ <div><h3>Quick delivery</h3><p>Your chosen model, ready sooner.</p></div>
+ <a class="btn" href="#contact">Get a quote</a>
+</div></div>
 
+<!-- ===== EXPLORE: services, parts, accessories etc. Edit text here ===== -->
 <section id="explore" class="alt"><div class="w">
- <div class="sh"><div><span>Explore</span><h2>More from SP Automobiles</h2></div></div>
+ <div class="sh"><div><span class="eyebrow">Explore</span><h2>More from SP Automobiles</h2></div></div>
  <div class="ex">
   <a href="#contact"><b>Services</b><span>Authorised servicing, maintenance schedule and warranty support for your Hero.</span></a>
   <a href="#contact"><b>Parts</b><span>Hero Genuine Parts, lubricants, bike-care products and batteries.</span></a>
@@ -194,101 +59,29 @@ footer small{display:block;width:100%;border-top:1px solid #222;padding-top:14px
  </div>
 </div></section>
 
-<section id="reviews" class="alt"><div class="w">
- <div class="rv"><div><span style="font:700 .95rem var(--fd);letter-spacing:.2em;color:var(--red);text-transform:uppercase">Loved by riders</span><h2 style="font-size:clamp(2rem,4.5vw,3rem);margin-top:4px">Rated 4.7 on Google</h2></div>
- <div><div class="sc">4.7</div><div class="st">★★★★★</div><small>Based on 1,744 reviews</small></div>
- <a class="btn" href="https://search.google.com/local/writereview?placeid=ChIJl6ph7-_bljkR9mSna2k3sqE" target="_blank" rel="noopener">Write a review</a></div>
-</div></section>
-
-<section id="locate"><div class="w">
- <div class="sh"><div><span>Showroom locator</span><h2>Visit SP Automobiles</h2></div></div>
- <div class="lc">
-  <div class="mp"><div><div class="pin"></div><h3>Madhukarpur, Siddharthnagar</h3><p>Hero MotoCorp showroom · Ground Floor · Uttar Pradesh 272207</p><a class="btn" href="https://maps.app.goo.gl/yauLGui85C85wFm76" target="_blank" rel="noopener">Get directions</a></div></div>
-  <div class="lk"><div><b>Address</b><p>SP Automobiles, Ground Floor, Madhukarpur, Siddharthnagar, Uttar Pradesh – 272207</p></div>
-   <div><b>Call us</b><p><a href="tel:+919289922584">+91 92899 22584</a><br><a href="tel:+918048243183">+91 80482 43183</a></p></div>
-   <div><b>Hours</b><p>Please call ahead to confirm showroom and workshop timings.</p></div>
-   <a class="btn" href="#contact">Book a test ride</a></div>
- </div>
-</div></section>
-
-<section id="contact" class="alt"><div class="w cn">
- <div class="ci"><div class="sh"><div><span>Visit us</span><h2>Book a test ride</h2></div></div>
-  <p><b>Showroom</b>Ground Floor, Madhukarpur, Siddharthnagar, Uttar Pradesh – 272207</p>
-  <p><b>Phone</b><a href="tel:+919289922584">+91 92899 22584</a> · <a href="tel:+918048243183">+91 80482 43183</a></p>
-  <p><b>Hours</b>Call ahead to confirm timings</p>
-  <p>Fill the form and it opens WhatsApp with your details ready to send.</p></div>
+<!-- ===== CONTACT AND WHATSAPP FORM: details come from config.js ===== -->
+<section id="contact"><div class="w cn">
+ <div class="ci"><div class="sh"><div><span class="eyebrow">Visit us</span><h2>Book a test ride</h2></div></div>
+  <dl>
+   <div><dt>Showroom</dt><dd data-cfg="address">Add your full address here</dd></div>
+   <div><dt>Phone</dt><dd class="cp"><span id="ph" data-cfg="phoneDisplay">+91 00000 00000</span><button type="button" id="cpn">Copy</button></dd></div>
+   <div><dt>Hours</dt><dd data-cfg="hours">Mon&ndash;Sat 9:30 AM &ndash; 7:30 PM &middot; Sunday by appointment</dd></div>
+  </dl>
+  <p class="nt">Fill the form and tap Send on WhatsApp. A chat with SP Automobiles opens with your details already typed, ready to send.</p></div>
  <form id="fm">
   <div class="r2"><label>Name<input id="n" required autocomplete="name"></label><label>Phone<input id="p" type="tel" required autocomplete="tel"></label></div>
   <label>Interested in<select id="m"></select></label>
-  <label>I want to<select id="t"><option>Book a test ride</option><option>Get on-road price</option><option>Exchange my old bike</option><option>Book a service</option></select></label>
-  <button class="btn" type="submit">Send on WhatsApp</button>
-  <a id="wl" href="#" target="_blank" rel="noopener" hidden style="text-align:center;color:var(--red);font-weight:600">WhatsApp didn’t open? Tap here to send →</a>
+  <label>I want to<select id="t"></select></label>
+  <a class="btn" id="wa" href="#" target="_blank" rel="noopener">Send on WhatsApp</a>
  </form>
 </div></section>
 </main>
 
-<footer><div class="w"><div><b>SP Automobiles</b><br>Hero motorcycles, scooters &amp; Vida · Sales, service &amp; spares</div><div>Ground Floor, Madhukarpur, Siddharthnagar, Uttar Pradesh – 272207<br>Phone: +91 92899 22584 · +91 80482 43183</div>
-<small>© 2026 SP Automobiles. Model availability, colours, prices and offers vary; please confirm with the showroom. Hero and model names belong to Hero MotoCorp.</small></div></footer>
+<!-- ===== FOOTER ===== -->
+<footer><div class="w"><div><b data-cfg="name">SP Automobiles</b><br><span data-cfg="tagline">Hero motorcycles, scooters &amp; Vida &middot; Sales, service &amp; spares</span></div><div class="mono">Phone: <span data-cfg="phoneDisplay">+91 00000 00000</span><br><span data-cfg="hoursShort">Mon&ndash;Sat 9:30 AM &ndash; 7:30 PM</span></div>
+<small>&copy; 2026 SP Automobiles. Model availability, colours, prices and offers vary; please confirm with the showroom. Hero and model names belong to Hero MotoCorp.</small></div></footer>
 
-<script>
-var PHONE="919289922584"; /* showroom WhatsApp number with country code */
-/* name, engine, torque, type, tags, new?, blurb */
-var M=[
-["Xtreme 250R","250 cc","25 nm @ 7250 rpm","m",["New Launch","Premium"],1,"4-stroke, 4-valve, single-cylinder, liquid-cooled DOHC."],
-["Xtreme 160R 4V","163.2 cc","14.6 nm @ 6500 rpm","m",["New Launch","Premium"],1,"Air-oil cooled, single-cylinder OHC streetfighter."],
-["Xpulse 210","210 cc","20.7 nm @ 7250 rpm","m",["Premium"],0,"Liquid-cooled 4-valve adventure machine."],
-["Karizma XMR","210 cc","20.4 nm @ 4000 rpm","m",["Premium"],0,"Liquid-cooled, full-faired sport."],
-["Xpulse 200 4V","199.6 cc","17.35 nm @ 6500 rpm","m",["Premium"],0,"Oil-cooled 4-valve, ready for every road."],
-["Xtreme 160R","163.2 cc","14 nm @ 6500 rpm","m",["Premium"],0,"Air-cooled 4-stroke performance."],
-["Harley-Davidson X440","440 cc","38 nm @ 4000 rpm","m",["Premium"],0,"Air-cooled single, available via Hero Premia."],
-["Glamour X ABS","125 cc","8.5 kW @ 8250 rpm","m",["New Launch","125 CC"],1,"Air-cooled 4-stroke 125 with ABS."],
-["Glamour X","125 cc","10.5 nm @ 6500 rpm","m",["125 CC"],0,"Stylish, refined everyday 125."],
-["Xtreme 125R","125 cc","10.5 nm @ 6500 rpm","m",["125 CC"],0,"0–60 km/h in 5.7 sec."],
-["Glamour","125 cc","10.6 nm @ 6000 rpm","m",["125 CC"],0,"Air-cooled single-cylinder OHC."],
-["Super Splendor Xtec 2.0","124.7 cc","10.6 nm @ 6000 rpm","m",["New Launch","125 CC"],1,"2-valve, air-cooled, single-cylinder."],
-["Super Splendor Xtec","124.7 cc","10.6 nm @ 6000 rpm","m",["125 CC"],0,"Air-cooled 4-stroke OHC."],
-["Splendor+ Xtec 2.0","97.2 cc","8.05 nm @ 6000 rpm","m",["100 CC"],0,"India’s favourite commuter, upgraded."],
-["Splendor+","97.2 cc","8.05 nm @ 6000 rpm","m",["100 CC"],0,"Air-cooled, 4-stroke, single-cylinder OHC."],
-["Splendor+ Xtec","97.2 cc","8.05 nm @ 6000 rpm","m",["100 CC"],0,"Splendor+ with Xtec features."],
-["HF Deluxe","97.2 cc","8.05 nm @ 6000 rpm","m",["100 CC"],0,"Reliable, light and easy on the pocket."],
-["HF 100","97.2 cc","8.05 nm @ 6000 rpm","m",["100 CC"],0,"Simple, dependable entry commuter."],
-["Passion+","97.2 cc","8.05 nm @ 6000 rpm","m",["100 CC"],0,"New variant of the stylish commuter."],
-["Splendor+ Flex","97.2 cc","8.3 nm (E85) @ 6000 rpm","m",["New Launch","100 CC"],1,"Flex-fuel Splendor+ for E85."],
-["HF Deluxe Flex","97.2 cc","8.3 nm (E85) @ 6000 rpm","m",["New Launch","100 CC"],1,"Flex-fuel HF Deluxe for E85."],
-["Xoom 160","156 cc","14 nm @ 6250 rpm","s",["New Launch","Scooters"],1,"Liquid-cooled 4-valve SOHC maxi-style scooter."],
-["Xoom 125","124.6 cc","10.4 nm @ 6000 rpm","s",["New Launch","Scooters"],1,"Air-cooled, sporty 125 scooter."],
-["Destini 110","110 cc","8.7 nm @ 5750 rpm","s",["New Launch","Scooters"],1,"Air-cooled 4-stroke, smooth city scooter."],
-["New Destini 125","125 cc","10.4 nm @ 5500 rpm","s",["Scooters"],0,"Premium-feel 125 scooter."],
-["Destini Prime","124.6 cc","10.36 nm @ 5500 rpm","s",["Scooters"],0,"Air-cooled 4-stroke SI engine."],
-["Xoom 110","110.9 cc","8.7 nm @ 5750 rpm","s",["Scooters"],0,"Light, peppy 110 scooter."],
-["Pleasure+ Xtec","110.9 cc","8.7 nm @ 5500 rpm","s",["Scooters"],0,"Single-cylinder OHC with Xtec."],
-["Vida V2 Plus","143 km range","6 kW peak power","s",["Electric"],0,"Vida electric scooter (IDC range)."]];
-var H=[0,2,6,13,8].map(function(i){return M[i]}); /* hero slides */
-H[2]=M[21];H[1]=M[2];H[0]=M[0];H[3]=M[13];H[4]=M[7];
-var AC=["#7a0016","#5a2a00","#0a3a5a","#4a0a2a","#3a0a5a"];
-function ic(x){return '<svg viewBox="0 0 300 150" aria-hidden="true"><use href="#'+(x[3]==="s"?"s":"b")+'"/></svg>'}
-var sls=document.getElementById("sls"),dots=document.getElementById("dots"),cur=0,tm;
-sls.innerHTML=H.map(function(x,i){var p=x[1].split(" ");return '<div class="sl'+(i?'':' on')+'"><div class="wm">'+x[0].split(" ")[0]+'</div><div style="position:relative">'+(x[5]?'<span class="tg">New</span>':'<span class="tg">Hero</span>')+'<h1>'+x[0]+'</h1><div class="sp"><div><b>'+p[0]+'<small>'+(p[1]||"")+'</small></b><span>Engine</span></div><div><b>'+x[2].split(" ")[0]+'<small>'+x[2].split(" ").slice(1,2).join("")+'</small></b><span>'+x[2].split(" ").slice(2).join(" ")+'</span></div></div><p class="ds">'+x[6]+'</p><p class="pr">Ex-showroom price: ask our team for today’s offer</p><div class="cta"><a class="btn" href="#contact" data-m="'+x[0]+'">Book test ride</a><a class="btn o" href="#models">Explore range</a></div></div>'+ic(x)+'</div>'}).join("");
-dots.innerHTML=H.map(function(_,i){return '<button aria-label="Slide '+(i+1)+'"'+(i?'':' class="on"')+'></button>'}).join("");
-function go(n){cur=(n+H.length)%H.length;[].forEach.call(sls.children,function(s,i){s.classList.toggle("on",i===cur)});[].forEach.call(dots.children,function(d,i){d.classList.toggle("on",i===cur)});document.getElementById("hero").style.setProperty("--a",AC[cur]);auto()}
-function auto(){clearInterval(tm);tm=setInterval(function(){go(cur+1)},6500)}
-document.getElementById("pv").onclick=function(){go(cur-1)};document.getElementById("nx").onclick=function(){go(cur+1)};
-dots.onclick=function(e){var i=[].indexOf.call(dots.children,e.target);if(i>-1)go(i)};
-auto();
-var T=["New Launch","100 CC","125 CC","Premium","Scooters","Electric"],tb=document.getElementById("tb"),gr=document.getElementById("gr"),sel=document.getElementById("m");
-tb.innerHTML=T.map(function(t,i){return '<button'+(i?'':' class="on"')+' data-t="'+t+'">'+t+'</button>'}).join("");
-function draw(t){gr.innerHTML=M.filter(function(x){return x[4].indexOf(t)>-1}).map(function(x){return '<div class="mc">'+(x[5]?'<span class="nw">NEW</span>':'')+'<div class="im">'+ic(x)+'</div><div class="bd"><h3>'+x[0]+'</h3><p>'+x[1]+(x[3]==="s"&&x[1].indexOf("km")>-1?"":" engine")+' · '+x[2]+'</p><div class="rw"><span>Ask price</span><a href="#contact" data-m="'+x[0]+'">Enquire →</a></div></div></div>'}).join("")}
-function pick(t){[].forEach.call(tb.children,function(b){b.classList.toggle("on",b.dataset.t===t)});draw(t)}
-draw("New Launch");
-tb.onclick=function(e){var b=e.target.closest("button");if(b)pick(b.dataset.t)};
-sel.innerHTML='<option>Not sure yet</option>'+M.map(function(x){return "<option>"+x[0]+"</option>"}).join("");
-document.addEventListener("click",function(e){var a=e.target.closest("a[data-m]");if(a)sel.value=a.dataset.m;var l=e.target.closest("nav a[data-t]");if(l)pick(l.dataset.t)});
-var nv=document.getElementById("nv"),mt=document.getElementById("mt");
-mt.onclick=function(){var o=nv.classList.toggle("on");mt.setAttribute("aria-expanded",o)};
-nv.onclick=function(e){if(e.target.closest("a")){nv.classList.remove("on");mt.setAttribute("aria-expanded","false")}};
-document.getElementById("fm").onsubmit=function(e){e.preventDefault();
-var t="Hello SP Automobiles,\nName: "+n.value+"\nPhone: "+p.value+"\nModel: "+m.value+"\nRequest: "+document.getElementById("t").value;
-var u="https://wa.me/"+PHONE+"?text="+encodeURIComponent(t),w=window.open(u,"_blank");if(w){w.opener=null}var l=document.getElementById("wl");l.href=u;l.hidden=false};
-</script>
+<script src="config.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
